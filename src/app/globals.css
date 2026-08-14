@@ -3,7 +3,7 @@
 :root {
   --cream: #f7f3e9;
   --ink: #243818;
-  --green: #405d2b;
+  --green: #425915;
   --muted: #66715e;
   --gold: #a88b4a;
 }
@@ -30,8 +30,31 @@ body {
 }
 
 ::selection {
-  background: #405d2b;
+  background: #425915;
   color: #f7f3e9;
+}
+
+main#top > section:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: -150px;
+  top: 110px;
+  width: min(46vw, 560px);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: url("/images/fern-logo.jpg") center / cover no-repeat;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  main#top > section:first-of-type::after {
+    left: -92px;
+    top: 128px;
+    width: 330px;
+    opacity: 0.03;
+  }
 }
 
 .eyebrow {

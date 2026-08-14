@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, CloseIcon, MenuIcon } from "./Icons";
 
@@ -38,12 +39,19 @@ export function Header() {
     >
       <div className="mx-auto flex h-20 max-w-[1480px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <a href="#top" className="group flex items-center gap-3" aria-label="The Fern Private Villas home">
-          <span className="grid size-10 place-items-center rounded-full border border-[#405d2b]/35 bg-[#405d2b] text-sm font-semibold tracking-[0.08em] text-[#f7f3e9] transition-transform duration-300 group-hover:rotate-6">
-            TF
+          <span className="relative size-12 shrink-0 overflow-hidden rounded-full bg-[#425915] shadow-[0_8px_24px_rgba(36,56,24,.16)] ring-1 ring-[#425915]/20 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-[1.03]">
+            <Image
+              src="/images/fern-logo.jpg"
+              alt="The Fern Private Villas logo"
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
           </span>
           <span className="hidden sm:block">
-            <span className="block font-serif text-[17px] leading-none tracking-[0.11em] text-[#243818]">THE FERN</span>
-            <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.28em] text-[#6c775f]">Private Villas</span>
+            <span className="block font-serif text-[18px] leading-none tracking-[0.09em] text-[#243818]">THE FERN</span>
+            <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.25em] text-[#6c775f]">Private Villas · Mabalacat</span>
           </span>
         </a>
 
@@ -89,7 +97,15 @@ export function Header() {
       >
         <div className="flex h-full flex-col px-6 py-5 sm:px-10">
           <div className="flex items-center justify-between">
-            <span className="font-serif text-xl tracking-[0.12em]">THE FERN</span>
+            <div className="flex items-center gap-3">
+              <span className="relative size-12 overflow-hidden rounded-full bg-[#425915] ring-1 ring-white/20">
+                <Image src="/images/fern-logo.jpg" alt="The Fern Private Villas logo" fill sizes="48px" className="object-cover" />
+              </span>
+              <span>
+                <span className="block font-serif text-lg tracking-[0.12em]">THE FERN</span>
+                <span className="mt-1 block text-[8px] font-semibold uppercase tracking-[0.24em] text-[#cdd6c1]">Private Villas</span>
+              </span>
+            </div>
             <button
               type="button"
               className="grid size-11 place-items-center rounded-full border border-white/20"
