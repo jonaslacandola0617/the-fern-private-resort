@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [{ url: "/images/fern-icon.png", sizes: "192x192", type: "image/png" }],
+    apple: [{ url: "/images/fern-icon.png", sizes: "192x192", type: "image/png" }],
+  },
   robots: {
     index: true,
     follow: true,
@@ -35,8 +39,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/image-3e2fd78365b7ad99.jpg",
-        alt: "The Fern Private Villas exterior and private swimming pool in Mabalacat City, Pampanga",
+        url: "/images/fern-og.jpg",
+        width: 600,
+        height: 315,
+        alt: "The Fern Private Villas official logo",
       },
     ],
   },
@@ -44,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/image-3e2fd78365b7ad99.jpg"],
+    images: ["/images/fern-og.jpg"],
   },
   category: "travel",
 };
