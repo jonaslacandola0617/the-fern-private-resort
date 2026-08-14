@@ -42,7 +42,7 @@ main#top > section:first-of-type::after {
   width: min(46vw, 560px);
   aspect-ratio: 1;
   border-radius: 999px;
-  background: url("/images/fern-logo.jpg") center / cover no-repeat;
+  background: url("/images/fern-mark-v2.png") center / cover no-repeat;
   opacity: 0.035;
   mix-blend-mode: multiply;
   pointer-events: none;

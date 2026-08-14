@@ -11,6 +11,8 @@ const links = [
   { label: "Location", href: "#location" },
 ];
 
+const brandMark = "/images/fern-mark-v2.png";
+
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -39,12 +41,12 @@ export function Header() {
     >
       <div className="mx-auto flex h-20 max-w-[1480px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <a href="#top" className="group flex items-center gap-3" aria-label="The Fern Private Villas home">
-          <span className="relative size-12 shrink-0 overflow-hidden rounded-full bg-[#425915] shadow-[0_8px_24px_rgba(36,56,24,.16)] ring-1 ring-[#425915]/20 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-[1.03]">
+          <span className="relative size-14 shrink-0 overflow-hidden rounded-full bg-[#425915] shadow-[0_8px_24px_rgba(36,56,24,.16)] ring-1 ring-[#425915]/20 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-[1.03]">
             <Image
-              src="/images/fern-logo.jpg"
-              alt="The Fern Private Villas logo"
+              src={brandMark}
+              alt="The Fern Private Villas official logo"
               fill
-              sizes="48px"
+              sizes="56px"
               className="object-cover"
               priority
             />
@@ -98,8 +100,8 @@ export function Header() {
         <div className="flex h-full flex-col px-6 py-5 sm:px-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="relative size-12 overflow-hidden rounded-full bg-[#425915] ring-1 ring-white/20">
-                <Image src="/images/fern-logo.jpg" alt="The Fern Private Villas logo" fill sizes="48px" className="object-cover" />
+              <span className="relative size-14 overflow-hidden rounded-full bg-[#425915] ring-1 ring-white/20">
+                <Image src={brandMark} alt="The Fern Private Villas official logo" fill sizes="56px" className="object-cover" />
               </span>
               <span>
                 <span className="block font-serif text-lg tracking-[0.12em]">THE FERN</span>
