@@ -11,7 +11,7 @@ const links = [
   { label: "Location", href: "#location" },
 ];
 
-const brandMark = "/images/fern-mark-v2.png";
+const brandMark = "/images/fern-icon.png";
 
 export function Header() {
   const [open, setOpen] = useState(false);
